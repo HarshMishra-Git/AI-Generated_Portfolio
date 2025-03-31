@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <!-- Background -->
+  <rect width="800" height="800" fill="#0F1218" fill-opacity="0.2" />
+  
+  <!-- Brain outline -->
+  <path d="M400,150 C550,150 650,280 650,400 C650,550 550,650 400,650 C250,650 150,550 150,400 C150,280 250,150 400,150 Z" 
+        fill="none" stroke="#7B4DFF" stroke-width="8" stroke-opacity="0.7" />
+  
+  <!-- Left hemisphere connections -->
+  <g stroke="#39FF14" stroke-width="3" stroke-opacity="0.6">
+    <path d="M200,350 C250,300 300,280 350,300 C400,320 420,380 400,420" />
+    <path d="M220,400 C270,380 320,390 350,420 C380,450 390,500 380,550" />
+    <path d="M240,450 C290,440 340,450 370,490 C400,530 400,580 380,620" />
+    <path d="M260,500 C310,490 360,510 390,560 C420,610 410,650 380,680" />
+  </g>
+  
+  <!-- Right hemisphere connections -->
+  <g stroke="#FF00FF" stroke-width="3" stroke-opacity="0.6">
+    <path d="M600,350 C550,300 500,280 450,300 C400,320 380,380 400,420" />
+    <path d="M580,400 C530,380 480,390 450,420 C420,450 410,500 420,550" />
+    <path d="M560,450 C510,440 460,450 430,490 C400,530 400,580 420,620" />
+    <path d="M540,500 C490,490 440,510 410,560 C380,610 390,650 420,680" />
+  </g>
+  
+  <!-- Neural nodes - Left hemisphere -->
+  <g class="nodes-left">
+    <circle cx="200" cy="350" r="10" fill="#39FF14">
+      <animate attributeName="r" values="8;12;8" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="220" cy="400" r="10" fill="#39FF14">
+      <animate attributeName="r" values="8;12;8" dur="3s" repeatCount="indefinite" begin="0.2s" />
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite" begin="0.2s" />
+    </circle>
+    <circle cx="240" cy="450" r="10" fill="#39FF14">
+      <animate attributeName="r" values="8;12;8" dur="3s" repeatCount="indefinite" begin="0.4s" />
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite" begin="0.4s" />
+    </circle>
+    <circle cx="260" cy="500" r="10" fill="#39FF14">
+      <animate attributeName="r" values="8;12;8" dur="3s" repeatCount="indefinite" begin="0.6s" />
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite" begin="0.6s" />
+    </circle>
+    <circle cx="350" cy="300" r="8" fill="#39FF14">
+      <animate attributeName="r" values="6;10;6" dur="3s" repeatCount="indefinite" begin="0.8s" />
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite" begin="0.8s" />
+    </circle>
+    <circle cx="350" cy="420" r="8" fill="#39FF14">
+      <animate attributeName="r" values="6;10;6" dur="3s" repeatCount="indefinite" begin="1s" />
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite" begin="1s" />
+    </circle>
+    <circle cx="370" cy="490" r="8" fill="#39FF14">
+      <animate attributeName="r" values="6;10;6" dur="3s" repeatCount="indefinite" begin="1.2s" />
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite" begin="1.2s" />
+    </circle>
+    <circle cx="390" cy="560" r="8" fill="#39FF14">
+      <animate attributeName="r" values="6;10;6" dur="3s" repeatCount="indefinite" begin="1.4s" />
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite" begin="1.4s" />
+    </circle>
+  </g>
+  
+  <!-- Neural nodes - Right hemisphere -->
+  <g class="nodes-right">
+    <circle cx="600" cy="350" r="10" fill="#FF00FF">
+      <animate attributeName="r" values="8;12;8" dur="3s" repeatCount="indefinite" begin="0.1s" />
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite" begin="0.1s" />
+    </circle>
+    <circle cx="580" cy="400" r="10" fill="#FF00FF">
+      <animate attributeName="r" values="8;12;8" dur="3s" repeatCount="indefinite" begin="0.3s" />
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite" begin="0.3s" />
+    </circle>
+    <circle cx="560" cy="450" r="10" fill="#FF00FF">
+      <animate attributeName="r" values="8;12;8" dur="3s" repeatCount="indefinite" begin="0.5s" />
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite" begin="0.5s" />
+    </circle>
+    <circle cx="540" cy="500" r="10" fill="#FF00FF">
+      <animate attributeName="r" values="8;12;8" dur="3s" repeatCount="indefinite" begin="0.7s" />
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite" begin="0.7s" />
+    </circle>
+    <circle cx="450" cy="300" r="8" fill="#FF00FF">
+      <animate attributeName="r" values="6;10;6" dur="3s" repeatCount="indefinite" begin="0.9s" />
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite" begin="0.9s" />
+    </circle>
+    <circle cx="450" cy="420" r="8" fill="#FF00FF">
+      <animate attributeName="r" values="6;10;6" dur="3s" repeatCount="indefinite" begin="1.1s" />
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite" begin="1.1s" />
+    </circle>
+    <circle cx="430" cy="490" r="8" fill="#FF00FF">
+      <animate attributeName="r" values="6;10;6" dur="3s" repeatCount="indefinite" begin="1.3s" />
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite" begin="1.3s" />
+    </circle>
+    <circle cx="410" cy="560" r="8" fill="#FF00FF">
+      <animate attributeName="r" values="6;10;6" dur="3s" repeatCount="indefinite" begin="1.5s" />
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite" begin="1.5s" />
+    </circle>
+  </g>
+  
+  <!-- Central brain connections -->
+  <g stroke="#00F5FF" stroke-width="4" stroke-opacity="0.5">
+    <path d="M380,420 C390,430 410,430 420,420" />
+    <path d="M380,550 C390,560 410,560 420,550" />
+    <path d="M380,620 C390,630 410,630 420,620" />
+    <path d="M380,680 C390,690 410,690 420,680" />
+    <path d="M400,300 C400,350 400,400 400,450" stroke-dasharray="5,5" />
+    <path d="M400,450 C400,500 400,550 400,600" stroke-dasharray="5,5" />
+  </g>
+  
+  <!-- Central nodes -->
+  <g>
+    <circle cx="400" cy="300" r="12" fill="#00F5FF">
+      <animate attributeName="r" values="10;15;10" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="400" cy="450" r="14" fill="#00F5FF">
+      <animate attributeName="r" values="12;18;12" dur="4s" repeatCount="indefinite" begin="0.5s" />
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="4s" repeatCount="indefinite" begin="0.5s" />
+    </circle>
+    <circle cx="400" cy="600" r="12" fill="#00F5FF">
+      <animate attributeName="r" values="10;15;10" dur="4s" repeatCount="indefinite" begin="1s" />
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="4s" repeatCount="indefinite" begin="1s" />
+    </circle>
+  </g>
+  
+  <!-- Neural signal animations -->
+  <g>
+    <!-- Left hemisphere signals -->
+    <circle r="4" fill="#39FF14">
+      <animate attributeName="cx" values="200;350;400" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="350;300;300" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle r="4" fill="#39FF14">
+      <animate attributeName="cx" values="220;350;400" dur="2s" repeatCount="indefinite" begin="0.4s" />
+      <animate attributeName="cy" values="400;420;450" dur="2s" repeatCount="indefinite" begin="0.4s" />
+    </circle>
+    
+    <!-- Right hemisphere signals -->
+    <circle r="4" fill="#FF00FF">
+      <animate attributeName="cx" values="600;450;400" dur="2s" repeatCount="indefinite" begin="0.2s" />
+      <animate attributeName="cy" values="350;300;300" dur="2s" repeatCount="indefinite" begin="0.2s" />
+    </circle>
+    <circle r="4" fill="#FF00FF">
+      <animate attributeName="cx" values="580;450;400" dur="2s" repeatCount="indefinite" begin="0.6s" />
+      <animate attributeName="cy" values="400;420;450" dur="2s" repeatCount="indefinite" begin="0.6s" />
+    </circle>
+    
+    <!-- Vertical signal through central column -->
+    <circle r="5" fill="#00F5FF">
+      <animate attributeName="cx" values="400;400;400" dur="3s" repeatCount="indefinite" begin="1s" />
+      <animate attributeName="cy" values="300;450;600" dur="3s" repeatCount="indefinite" begin="1s" />
+    </circle>
+  </g>
+  
+  <!-- Circuit lines around the brain edge -->
+  <g stroke="#39FF14" stroke-width="2" fill="none" stroke-opacity="0.8">
+    <path d="M170,350 C160,380 155,430 160,480 C165,530 180,580 200,620" stroke-dasharray="5,5" />
+    <path d="M630,350 C640,380 645,430 640,480 C635,530 620,580 600,620" stroke-dasharray="5,5" />
+    <path d="M250,200 C300,170 350,160 400,160 C450,160 500,170 550,200" stroke-dasharray="5,5" />
+    <path d="M250,600 C300,630 350,640 400,640 C450,640 500,630 550,600" stroke-dasharray="5,5" />
+  </g>
+  
+  <!-- Small decorative circuit nodes -->
+  <g>
+    <circle cx="170" cy="350" r="5" fill="#39FF14" />
+    <circle cx="160" cy="480" r="5" fill="#39FF14" />
+    <circle cx="200" cy="620" r="5" fill="#39FF14" />
+    <circle cx="630" cy="350" r="5" fill="#FF00FF" />
+    <circle cx="640" cy="480" r="5" fill="#FF00FF" />
+    <circle cx="600" cy="620" r="5" fill="#FF00FF" />
+    <circle cx="250" cy="200" r="5" fill="#00F5FF" />
+    <circle cx="400" cy="160" r="5" fill="#00F5FF" />
+    <circle cx="550" cy="200" r="5" fill="#00F5FF" />
+    <circle cx="250" cy="600" r="5" fill="#00F5FF" />
+    <circle cx="400" cy="640" r="5" fill="#00F5FF" />
+    <circle cx="550" cy="600" r="5" fill="#00F5FF" />
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="80" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle" fill="#FFFFFF">AI Neural Network</text>
+</svg>

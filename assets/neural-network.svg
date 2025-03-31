@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0F1218" />
+  
+  <!-- Connection Lines -->
+  <g stroke-width="2" stroke-opacity="0.6">
+    <!-- Input to Hidden Layer 1 -->
+    <line x1="100" y1="150" x2="300" y2="100" stroke="#39FF14" />
+    <line x1="100" y1="150" x2="300" y2="200" stroke="#39FF14" />
+    <line x1="100" y1="150" x2="300" y2="300" stroke="#39FF14" />
+    <line x1="100" y1="250" x2="300" y2="100" stroke="#39FF14" />
+    <line x1="100" y1="250" x2="300" y2="200" stroke="#39FF14" />
+    <line x1="100" y1="250" x2="300" y2="300" stroke="#39FF14" />
+    <line x1="100" y1="350" x2="300" y2="100" stroke="#39FF14" />
+    <line x1="100" y1="350" x2="300" y2="200" stroke="#39FF14" />
+    <line x1="100" y1="350" x2="300" y2="300" stroke="#39FF14" />
+    <line x1="100" y1="450" x2="300" y2="100" stroke="#39FF14" />
+    <line x1="100" y1="450" x2="300" y2="200" stroke="#39FF14" />
+    <line x1="100" y1="450" x2="300" y2="300" stroke="#39FF14" />
+    
+    <!-- Hidden Layer 1 to Hidden Layer 2 -->
+    <line x1="300" y1="100" x2="500" y2="150" stroke="#7B4DFF" />
+    <line x1="300" y1="100" x2="500" y2="250" stroke="#7B4DFF" />
+    <line x1="300" y1="100" x2="500" y2="350" stroke="#7B4DFF" />
+    <line x1="300" y1="200" x2="500" y2="150" stroke="#7B4DFF" />
+    <line x1="300" y1="200" x2="500" y2="250" stroke="#7B4DFF" />
+    <line x1="300" y1="200" x2="500" y2="350" stroke="#7B4DFF" />
+    <line x1="300" y1="300" x2="500" y2="150" stroke="#7B4DFF" />
+    <line x1="300" y1="300" x2="500" y2="250" stroke="#7B4DFF" />
+    <line x1="300" y1="300" x2="500" y2="350" stroke="#7B4DFF" />
+    
+    <!-- Hidden Layer 2 to Output -->
+    <line x1="500" y1="150" x2="700" y2="200" stroke="#FF00FF" />
+    <line x1="500" y1="150" x2="700" y2="400" stroke="#FF00FF" />
+    <line x1="500" y1="250" x2="700" y2="200" stroke="#FF00FF" />
+    <line x1="500" y1="250" x2="700" y2="400" stroke="#FF00FF" />
+    <line x1="500" y1="350" x2="700" y2="200" stroke="#FF00FF" />
+    <line x1="500" y1="350" x2="700" y2="400" stroke="#FF00FF" />
+  </g>
+  
+  <!-- Input Layer Nodes -->
+  <g fill="#39FF14">
+    <circle cx="100" cy="150" r="20" />
+    <circle cx="100" cy="250" r="20" />
+    <circle cx="100" cy="350" r="20" />
+    <circle cx="100" cy="450" r="20" />
+  </g>
+  
+  <!-- Hidden Layer 1 Nodes -->
+  <g fill="#7B4DFF">
+    <circle cx="300" cy="100" r="20" />
+    <circle cx="300" cy="200" r="20" />
+    <circle cx="300" cy="300" r="20" />
+  </g>
+  
+  <!-- Hidden Layer 2 Nodes -->
+  <g fill="#FF00FF">
+    <circle cx="500" cy="150" r="20" />
+    <circle cx="500" cy="250" r="20" />
+    <circle cx="500" cy="350" r="20" />
+  </g>
+  
+  <!-- Output Layer Nodes -->
+  <g fill="#00F5FF">
+    <circle cx="700" cy="200" r="20" />
+    <circle cx="700" cy="400" r="20" />
+  </g>
+  
+  <!-- Labels -->
+  <g fill="white" font-family="Arial" font-size="14" text-anchor="middle">
+    <text x="100" y="70" font-size="16" font-weight="bold">Input Layer</text>
+    <text x="300" y="70" font-size="16" font-weight="bold">Hidden Layer 1</text>
+    <text x="500" y="70" font-size="16" font-weight="bold">Hidden Layer 2</text>
+    <text x="700" y="70" font-size="16" font-weight="bold">Output Layer</text>
+  </g>
+  
+  <!-- Animated Pulses -->
+  <g fill-opacity="0.8">
+    <circle cx="100" cy="150" r="10">
+      <animate attributeName="r" values="5;15;5" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="fill-opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="300" cy="200" r="10">
+      <animate attributeName="r" values="5;15;5" dur="2s" repeatCount="indefinite" begin="0.3s" />
+      <animate attributeName="fill-opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite" begin="0.3s" />
+    </circle>
+    <circle cx="500" cy="250" r="10">
+      <animate attributeName="r" values="5;15;5" dur="2s" repeatCount="indefinite" begin="0.6s" />
+      <animate attributeName="fill-opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite" begin="0.6s" />
+    </circle>
+    <circle cx="700" cy="400" r="10">
+      <animate attributeName="r" values="5;15;5" dur="2s" repeatCount="indefinite" begin="0.9s" />
+      <animate attributeName="fill-opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite" begin="0.9s" />
+    </circle>
+  </g>
+  
+  <!-- Data Flow Animation -->
+  <g>
+    <circle r="5" fill="#39FF14">
+      <animate attributeName="cx" values="100;300" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="150;200" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle r="5" fill="#7B4DFF">
+      <animate attributeName="cx" values="300;500" dur="2s" repeatCount="indefinite" begin="0.4s" />
+      <animate attributeName="cy" values="200;250" dur="2s" repeatCount="indefinite" begin="0.4s" />
+    </circle>
+    <circle r="5" fill="#FF00FF">
+      <animate attributeName="cx" values="500;700" dur="2s" repeatCount="indefinite" begin="0.8s" />
+      <animate attributeName="cy" values="250;400" dur="2s" repeatCount="indefinite" begin="0.8s" />
+    </circle>
+  </g>
+</svg>

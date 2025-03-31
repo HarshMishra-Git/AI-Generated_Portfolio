@@ -1,0 +1,16 @@
+
+flask
+flask-mail
+
+## AI/ML Integration
+google-generativeai
+openai
+
+## Utilities
+pillow
+twilio
+python-dotenv
+
+## Deployment
+gunicorn 
+
